@@ -6,8 +6,6 @@
     "xabikos.JavaScriptSnippets",
     "ms-vscode.vscode-typescript-next",
     "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode",
-    "VisualStudioExptTeam.vscodeintellicode",
-    "VisualStudioExptTeam.intellicode-api-usage-examples"
+    "esbenp.prettier-vscode"
   ]
 }
