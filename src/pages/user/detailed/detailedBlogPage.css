@@ -1,0 +1,22 @@
+.detailedBlogPage{
+    background-color: white;
+    font-size: 13px;
+    height: 100%;
+}
+.sideSpace .img{
+    display: flex;
+    justify-content: center;
+    /* margin: auto; */
+}
+.sideSpace{
+    padding-left: 20px;
+}
+.hrlight{
+    background-color: rgb(99, 99, 99);
+}
+.headDetailedBlog{
+    padding: 7px 10px;
+}
+.headDetailedBlog p{
+    line-height: 14px;
+}

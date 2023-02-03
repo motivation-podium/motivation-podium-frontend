@@ -26,6 +26,9 @@ function Creator() {
         <li>
           <Link to="/upload/status">Status </Link>
         </li>
+        <li>
+          <Link to="/admin">Admin </Link>
+        </li>
       </ul>
       {/* <UnderConstruction /> */}
     </div>

@@ -16,6 +16,7 @@ import Shop from "./other/Shop"
 // import Shop from "./other/Shop"
 import HomeNavbar from "../../components/HomeNavbar";
 import "../stylePage/home.css";
+import DetailedBlog from "./detailed/DetailedBlog";
 function Home() {
   return (
     <div className="page-home">
@@ -38,6 +39,7 @@ function Home() {
               <Route path="language" element={<Language/>}/>
               <Route path="bookmark" element={<Bookmark/>}/>
               <Route path="notification" element={<Notification/>}/>
+              <Route path="blogs/detailedBlog" element={<DetailedBlog/>}/>
             </Routes>
             <br />
           </div>
