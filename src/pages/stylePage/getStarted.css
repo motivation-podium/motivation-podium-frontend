@@ -1,0 +1,25 @@
+.page-getStarted{
+    background-color: var(--bg-light) ;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-getStarted .getStartedwrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+}
+.page-getStarted .getStartedIntro ,.page-getStarted .getStartedForm{
+    width: 350px;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page-getStarted .getStartedForm{
+    background-color: white;
+    height: 300px;
+}

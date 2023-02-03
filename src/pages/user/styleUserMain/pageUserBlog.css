@@ -1,0 +1,37 @@
+.page-userBlog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    justify-content: center;
+    font-size: 14px;
+}
+.page-userBlog .blogCard{
+    width: 100%;
+    max-width: 500px;
+    border : 1px solid rgba(128, 128, 128, 0.726);
+    margin : 2px 0;
+    padding: 0px;
+    border-radius: 11px;
+    display: flex;
+    height: 100px;
+    overflow: hidden;
+}
+.page-userBlog .blogCard .imgdiv{
+    max-width: 100px;
+}
+.page-userBlog .blogCard img{
+    max-width: 100px;
+    height: 100px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+.page-userBlog .blogcardtext{
+    padding:5px 15px ;
+    font-size: 13px;
+    text-align: left;
+}
+.page-userBlog .blogcardtext h4{
+    text-transform: capitalize;
+}

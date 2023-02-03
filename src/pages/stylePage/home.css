@@ -1,0 +1,32 @@
+.page-home{
+    background-color: var(--bg-light);
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+.page-home .homeWrapper {
+    display: flex;
+    flex-direction: row;
+}
+.page-home .homeAside{
+    border-right: 1px solid gray;
+    height: 100vh;
+}
+.page-home .homeMain{
+    width: 100%;
+    overflow: hidden;
+}
+.page-home .homeHeader{
+    border-bottom: 0.5px solid black;
+    padding: 5px 4px;
+    width: 100%;
+    color: var(--txt-blue-mid);
+    font-weight: bold
+}
+.page-home .homeSection{
+    height: calc(100vh - 36px);
+    overflow: scroll;
+}
+.homeSection::-webkit-scrollbar{
+    display: none;
+}

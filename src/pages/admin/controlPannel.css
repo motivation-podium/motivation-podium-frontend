@@ -1,0 +1,15 @@
+.page-contorlPannel{
+    padding: 20px;
+}
+.page-contorlPannel ul{
+    list-style-type:none;
+}
+.page-contorlPannel ul a li{
+    border: 1px solid #cacdd1;
+    margin: 3px 0;
+    padding: 2px 10px;
+    border-radius: 4px;
+}
+.page-contorlPannel ul a li:hover{
+    background-color: #cacdd1;
+}

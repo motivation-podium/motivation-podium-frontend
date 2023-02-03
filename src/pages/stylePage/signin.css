@@ -1,0 +1,19 @@
+.page-signin{
+    background-color: var(--bg-light);
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-signin .signinWrapper{
+    background-color: white;
+    padding: 30px 50px;
+    max-width: 450px;
+}
+.userLoginErrorMsg{
+    background-color: rgb(252, 183, 183);
+    color: red;
+    text-align: center;
+    /* border: 1px solid red; */
+}

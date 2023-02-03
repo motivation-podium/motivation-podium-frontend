@@ -1,0 +1,10 @@
+.page-creator ul{
+    list-style-type: none;
+    padding: 10px;
+}
+.page-creator ul li{
+    background-color: rgb(202, 202, 202);
+    padding: 3px;
+    margin : 3px 0 ;
+
+}

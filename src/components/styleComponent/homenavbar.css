@@ -1,0 +1,41 @@
+.comp-HomeNavbar{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 8px 10px 8px;
+}
+.comp-HomeNavbar .homeNavItem{
+    display: flex;
+    /* background-color: aqua; */
+    margin: 1px 0;
+    vertical-align: middle;
+}
+.comp-HomeNavbar .homeNavItem .homeNavIconDetail{
+    padding-top: 3px;
+}
+.comp-HomeNavbar .homeNavIcon{
+    display: flex;
+    align-items: center;
+    font-size: 29px;
+    margin-right: 3px;
+    border-radius: 50%;
+}
+.comp-HomeNavbar .homeNavBottom .homeNavItem{
+    background-color: var(--bg-blue-mid);
+    padding: 2px;
+    border-radius: 5px;
+    width: 100%;
+    /* background-color: red; */
+    /* padding: 4px; */
+}
+/* @media screen and (min-width:500px) {
+    .homeNavIconDetail {
+        display: block;
+    }
+} */
+@media screen and (max-width:500px) {
+    .homeNavIconDetail {
+        display: none;
+    }
+}

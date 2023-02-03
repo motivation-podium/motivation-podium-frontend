@@ -1,0 +1,6 @@
+add favicon
+add metaTags 
+add OpenGraphs
+Google Analytics
+Google Advatisements
+Google Serch Console
