@@ -1,6 +1,8 @@
-// let baseDev = "https://white-farmer-wuyur.ineuron.app:4000"
 let baseDev = "https://motivationpodiumbackend.onrender.com/"
-//https://motivationpodiumbackend.onrender.com/
+let baseDeployment = "https://motivationpodiumbackend.onrender.com/"
+// let baseDev = "https://white-farmer-wuyur.ineuron.app:4000"
+// let baseDeployment = "https://white-farmer-wuyur.ineuron.app:4000"
+
 let APIUrlDev = {
    UrlSignInUser: baseDev+"/signin",
    UrlSignUpUser: baseDev+"/signup",
