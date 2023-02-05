@@ -11,7 +11,7 @@ function AdminAuth() {
   function handleAdminAuth(){
     console.log(userName,password)
     if(userName&&password){
-      let urlineuron = "https://white-farmer-wuyur.ineuron.app:4000/admin/auth"
+    //  let urlineuron = "https://white-farmer-wuyur.ineuron.app:4000/admin/auth"
       let url = "https://motivationpodiumbackend.onrender.com/admin/auth"
       axios.post(url,{Username:userName,Password:password}).then(res=>{
         console.log(res.data)
