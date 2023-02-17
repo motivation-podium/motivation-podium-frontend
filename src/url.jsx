@@ -1,5 +1,7 @@
-let baseDev = "https://white-farmer-wuyur.ineuron.app:4000"
-let baseDeployment = "https://white-farmer-wuyur.ineuron.app:4000"
+let baseDev = "https://motivationpodiumbackend.onrender.com"
+let baseDeployment = "https://motivationpodiumbackend.onrender.com"
+// let baseDev = "https://white-farmer-wuyur.ineuron.app:4000"
+// let baseDeployment = "https://white-farmer-wuyur.ineuron.app:4000"
 
 // baseDev = "https://motivationpodiumbackend.onrender.com"
 // baseDeployment = "https://motivationpodiumbackend.onrender.com"
