@@ -1,8 +1,8 @@
 let baseDev = "https://motivationpodiumbackend.onrender.com"
 let baseDeployment = "https://motivationpodiumbackend.onrender.com"
 
-  baseDev = "https://motiation-podium-backend-6m860c78p-motivation-podium.vercel.app/"
-  baseDeployment = "https://motiation-podium-backend-6m860c78p-motivation-podium.vercel.app/"
+  baseDev = "https://motiation-podium-backend-6m860c78p-motivation-podium.vercel.app"
+  baseDeployment = "https://motiation-podium-backend-6m860c78p-motivation-podium.vercel.app"
 
 //  baseDev = "https://white-farmer-wuyur.ineuron.app:4000"
 //  baseDeployment = "https://white-farmer-wuyur.ineuron.app:4000"
