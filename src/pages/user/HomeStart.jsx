@@ -1,58 +1,35 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect } from "react";
 import "./styleUserMain/homeStart.css";
+import { useState } from "react";
+// import { useNavigate } from "react-router-dom";
+import APIUrl from "../../url";
 function HomeStart() {
-  let arrayofEvent = [
-    {
-      img: "https://picsum.photos/id/54/400/300",
-      title: "sdsd",
-      author: "asasd",
-    },
-    {
-      img: "https://picsum.photos/id/54/400/300",
-      title: "sdsd",
-      author: "asasd",
-    },
-    {
-      img: "https://picsum.photos/id/54/400/300",
-      title: "sdsd",
-      author: "asasd",
-    },
-    {
-      img: "https://picsum.photos/id/54/400/300",
-      title: "sdsd",
-      author: "asasd",
-    },
-    {
-      img: "https://picsum.photos/id/54/400/300",
-      title: "sdsd",
-      author: "asasd",
-    },
-    {
-      img: "https://picsum.photos/id/54/400/300",
-      title: "sdsd",
-      author: "asasd",
-    },
-    {
-      img: "https://picsum.photos/id/54/400/300",
-      title: "sdsd",
-      author: "asasd",
-    },
-  ];
+  //fetchFinalEvent
+  let [arrayEvent,setArrayEvent] = useState([]);
+
+  useEffect(()=>{
+    axios.get(APIUrl.fetchFinalEvent).then((res)=>{
+      let data = res.data
+      data.reverse();
+      console.log(data)
+      setArrayEvent(data)
+      // sa(arrayBlog[0].BloagDesciption)
+    })
+  },[])
   return (
     <div className="page-homeStart">
-      {arrayofEvent.map((arrayItem, index) => {
+      {arrayEvent.map((arrayItem, index) => {
         return (
           <div key={index}>
             <div className="homeStartcard">
-              <img src={arrayItem.img} alt=""/>
+              <div className="homeEventCardImg"><img src={arrayItem.ImageUrl} alt=""/></div>
               <div className="homeStartcard-body">
-                <h2>{arrayItem.title}</h2>
+                <h2>{arrayItem.EventTitle}</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam.
+                  {arrayItem.EventSummary}
                 </p>
-                <h5>{arrayItem.author}</h5>
+                {/* <h5>{arrayItem.author}</h5> */}
               </div>
             </div>
           </div>
@@ -63,3 +40,12 @@ function HomeStart() {
 }
 
 export default HomeStart;
+// EventSummary
+// : 
+// "Yoo"
+// EventTitle
+// : 
+// "Arora"
+// ImageUrl
+// : 
+// "Karan"

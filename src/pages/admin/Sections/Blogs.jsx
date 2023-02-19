@@ -24,7 +24,7 @@ function Blogs() {
     console.log("updating post at finalDb");
     console.log(_id, _status);
     // alert("done status will be updated on next refresh");
-    if (blog.Status) {
+    if (blog.Status === true) {
       alert("already present");
       return;
     } else {

@@ -7,6 +7,7 @@ import ImageUpload from "./ImageUpload";
 import VideoUpload from "./VideoUpload";
 import NewsUpload from "./NewsUpload";
 import UploadHome from "./UploadHome";
+import EventsUpload from "./EventsUpload";
 function Upload() {
   return (
     <div>
@@ -16,6 +17,8 @@ function Upload() {
         <Route path="image" element={<ImageUpload></ImageUpload>}></Route>
         <Route path="video" element={<VideoUpload></VideoUpload>}></Route>
         <Route path="news" element={<NewsUpload></NewsUpload>}></Route>
+        <Route path="event" element={<EventsUpload></EventsUpload>}></Route>
+        <Route path="status" element={<NewsUpload></NewsUpload>}></Route>
       </Routes>
     </div>
   );

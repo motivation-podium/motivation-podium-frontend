@@ -18,7 +18,7 @@ function ControlPannelComp() {
       <Link to="news">
         <li>News</li>
       </Link>
-      <Link to="events">
+      <Link to="event">
         <li>Event</li>
       </Link>
       <Link to="status">

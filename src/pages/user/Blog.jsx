@@ -31,9 +31,9 @@ function Blog() {
               <img src={arrayItem.ImageUrl} alt="user not uploaded" />
             </div>
             <div className="blogcardtext">
-              <p><b>{arrayItem.BlogTitle}</b></p>
-              <p><small>{arrayItem.CreatorName}</small></p>
-              <p>{arrayItem.BlogSummary}</p>
+              <h3>{arrayItem.BlogTitle}</h3>
+              <p className="author"><small>By - {arrayItem.CreatorName}</small></p>
+              <p className="summary">{arrayItem.BlogSummary}</p>
             {/* <div dangerouslySetInnerHTML={{__html:arrayItem.BloagDesciption}}></div> */}
             </div>
           </div>

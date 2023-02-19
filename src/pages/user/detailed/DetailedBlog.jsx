@@ -7,9 +7,7 @@ function DetailedBlog() {
   return (
     <div className="detailedBlogPage">
       <div className="sideSpace headDetailedBlog">
-        <p>
-          <b>{blog.BlogTitle}</b>
-        </p>
+        <h3>{blog.BlogTitle}</h3>
         <p><small>Tag : {blog.ContentTag}</small></p>
         <p>
           <small>By : {blog.CreatorName}</small>
@@ -30,7 +28,7 @@ function DetailedBlog() {
         </div>
         <hr />
         <div className="sideSpace">
-        <div dangerouslySetInnerHTML={{ __html: blog.BloagDesciption }}></div>
+        <div dangerouslySetInnerHTML={{ __html: blog.BloagDesciption }} className='sidespaceDetailedBlog'></div>
         </div>
     </div>
   );

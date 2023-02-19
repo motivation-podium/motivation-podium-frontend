@@ -6,10 +6,18 @@
 .sideSpace .img{
     display: flex;
     justify-content: center;
+    width: 100%;
+    /* margin: auto; */
+}
+.sideSpace img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
     /* margin: auto; */
 }
 .sideSpace{
     padding-left: 20px;
+    text-align: justify;
 }
 .hrlight{
     background-color: rgb(99, 99, 99);
@@ -19,4 +27,33 @@
 }
 .headDetailedBlog p{
     line-height: 14px;
+} 
+.sidespaceDetailedBlog img{
+    width: 100%;
+}
+.sideSpace details{
+    padding:0 20px 0 0;
+}
+.sidespaceDetailedBlog{
+    padding: 0 20px 0 0;
+    text-align: justify;
+}
+@media screen and (min-width:500px){
+    .sidespaceDetailedBlog img{
+        display: flex;
+        justify-content: center;
+        width: 400px;
+    }
+    .sideSpace img{
+        display: flex;
+        justify-content: center;
+        width: 400px;
+    }
+    .sideSpace details{
+        padding:0 50px;
+    }
+    .sidespaceDetailedBlog{
+        padding: 0 50px;
+        text-align: justify;
+    }
 }

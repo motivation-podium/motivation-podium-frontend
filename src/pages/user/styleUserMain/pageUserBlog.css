@@ -29,10 +29,19 @@
     border-radius: 3px;
 }
 .page-userBlog .blogcardtext{
-    padding:5px 15px ;
+    padding:5px 8px ;
     font-size: 13px;
     text-align: left;
+    margin: -0px;
 }
-.page-userBlog .blogcardtext h4{
-    text-transform: capitalize;
+.page-userBlog .blogcardtext h3{
+    margin: -6px 0;
+}
+.page-userBlog .blogcardtext .author{
+    margin: -3px 0;
+}
+.page-userBlog .blogcardtext .summary{
+    margin: -3px 0;
+    line-height: 16px;
+    font-size: 13px;
 }

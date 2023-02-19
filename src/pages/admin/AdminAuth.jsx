@@ -2,31 +2,33 @@ import axios from "axios";
 import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./adminAuth.css"
+import "./adminAuth.css";
+import Url from "../../url";
 function AdminAuth() {
-  let navigate = useNavigate()
-  let [userName,setUserName] = useState("")
-  let [password,setPassword] = useState("")
-  let [errorMsg,setErrorMsg] = useState("")
-  function handleAdminAuth(){
-    console.log(userName,password)
-    if(userName&&password){
-    //  let urlineuron = "https://white-farmer-wuyur.ineuron.app:4000/admin/auth"
-      let url = "https://motivationpodiumbackend.onrender.com/admin/auth"
-      axios.post(url,{Username:userName,Password:password}).then(res=>{
-        console.log(res.data)
-        if(res.data.msg==="Approved"){
-          sessionStorage.setItem("admin","authorised")
-          navigate("/admin/controlpannel")
-        }else{
-          setErrorMsg("Your request is declined")
-        }
-      }
-      )
-    }
-    else{
-      setErrorMsg("Data cant be Empty")
-      return ;
+  let navigate = useNavigate();
+  let [userName, setUserName] = useState("");
+  let [password, setPassword] = useState("");
+  let [errorMsg, setErrorMsg] = useState("");
+  function handleAdminAuth() {
+    console.log(userName, password);
+    if (userName && password) {
+      let url;
+      url = Url.adminAuth;
+      // url = "https://motivationpodiumbackend.onrender.com/admin/auth"
+      axios
+        .post(url, { Username: userName, Password: password })
+        .then((res) => {
+          console.log(res.data);
+          if (res.data.msg === "Approved") {
+            sessionStorage.setItem("admin", "authorised");
+            navigate("/admin/controlpannel");
+          } else {
+            setErrorMsg("Your request is declined");
+          }
+        });
+    } else {
+      setErrorMsg("Data cant be Empty");
+      return;
     }
   }
   return (
@@ -66,7 +68,9 @@ function AdminAuth() {
           </div>
           <br />
           <div className="mp-txt-center">
-            <small className="txt-blue">In case You forget password plese contact developer</small>
+            <small className="txt-blue">
+              In case You forget password plese contact developer
+            </small>
           </div>
           <br />
           <div className="userLoginErrorMsg">{errorMsg}</div>

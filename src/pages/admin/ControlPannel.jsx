@@ -7,6 +7,7 @@ import { Route, Routes} from "react-router-dom";
 import "./controlPannel.css";
 import ControlPannelComp from "./ControlPannelComp";
 import Blogs from "./Sections/Blogs";
+import Events from "./Sections/Events";
 function ControlPannel() {
   let [controlPannelAccess, setControlPannelAccess] = useState(true);
   let [adminStatus] = useState(sessionStorage.getItem("admin"));
@@ -29,7 +30,7 @@ function ControlPannel() {
           <Route path="videos" element={<p>hi</p>}></Route>
           <Route path="images" element={<p>hi</p>}></Route>
           <Route path="news" element={<p>hi</p>}></Route>
-          <Route path="event" element={<p>hi</p>}></Route>
+          <Route path="event" element={<Events/>}></Route>
         </Routes>
       )}
     </div>

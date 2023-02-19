@@ -17,8 +17,8 @@
 .comp-HomeNavbar .homeNavIcon{
     display: flex;
     align-items: center;
-    font-size: 29px;
-    margin-right: 3px;
+    font-size: 35px;
+    margin-right: 0px;
     border-radius: 50%;
 }
 .comp-HomeNavbar .homeNavBottom .homeNavItem{
